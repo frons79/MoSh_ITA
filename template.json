@@ -11,18 +11,18 @@
           "value": 10,
           "min": 0,
           "max": 10,
-          "label" : "Health"
+          "label" : "Salute"
         },
         "hits": {
           "value": 0,
           "min": 0,
           "max" : 2,
-          "label" : "Wounds"
+          "label" : "Ferite"
         },
         "bleeding": {
           "value": 0,
           "min": 0,
-          "label" : "Bleeding"
+          "label" : "Sanguinamento"
         }
       }
     },
@@ -70,16 +70,16 @@
           "mod": 0,
           "min": 0,
           "max": 99,
-          "label": "Strength",
-          "rollLabel": "Strength Check"
+          "label": "Forza",
+          "rollLabel": "Prova di Forza"
         },
         "speed": {
           "value": 10,
           "mod": 0,
           "min": 0,
           "max": 99,
-          "label": "Speed",
-          "rollLabel": "Speed Check"
+          "label": "Agilità",
+          "rollLabel": "Prova di Agilità"
         },
         "intellect": {
           "value": 10,
@@ -94,32 +94,32 @@
           "mod": 0,
           "min": 0,
           "max": 99,
-          "label": "Combat",
-          "rollLabel": "Combat Check"
+          "label": "Combattimento",
+          "rollLabel": "Prova di Combattimento"
         },
         "sanity": {
           "value": 10,
           "mod": 0,
           "min": 0,
           "max": 99,
-          "label": "Sanity",
-          "rollLabel": "Sanity Save"
+          "label": "Salute mentale",
+          "rollLabel": "Tiro Salvezza su Sanità mentale"
         },
         "fear": {
           "value": 10,
           "mod": 0,
           "min": 0,
           "max": 99,
-          "label": "Fear",
-          "rollLabel": "Fear Save"
+          "label": "Paura",
+          "rollLabel": "Tiro Salvezza su Paura"
         },
         "body": {
           "value": 10,
           "mod": 0,
           "min": 0,
           "max": 99,
-          "label": "Body",
-          "rollLabel": "Body Save"
+          "label": "Corpo",
+          "rollLabel": "Tiro Salvezza su Corpo"
         },
         "armor": {
           "value": 0,
@@ -128,8 +128,8 @@
           "max": 99,
           "damageReduction": 0,
           "cover": "none",
-          "label": "Armor",
-          "rollLabel": "Armor Save"
+          "label": "Armatura",
+          "rollLabel": "Tiro Salvezza su Armatura"
         }
       },
       "other": {
@@ -143,7 +143,7 @@
           "value": 0,
           "min": 0,
           "max": 15,
-          "label" : "Resolve"
+          "label" : "Risoluzione"
         },
         "stressdesc": {
           "value": ""
@@ -155,7 +155,7 @@
         "base"
       ],
       "biography": "",
-      "description": "This is a description",
+      "description": "Questa è una descrizione",
       "xp": {
         "value": 1,
         "html": ""
@@ -165,48 +165,48 @@
           "value": 10,
           "min": 0,
           "max": 99,
-          "label": "Combat",
-          "rollLabel": "Combat Check",
+          "label": "Combattimento",
+          "rollLabel": "Prova di Combattimento",
           "enabled" : true
         },
         "instinct": {
           "value": 10,
           "min": 0,
           "max": 99,
-          "label": "Instinct",
-          "rollLabel": "Instinct Check",
+          "label": "Istinto",
+          "rollLabel": "Prova di Istinto",
           "enabled" : true
         },
         "speed": {
           "value": 10,
           "min": 0,
           "max": 99,
-          "label": "Speed",
-          "rollLabel": "Speed Check",
+          "label": "Agilità",
+          "rollLabel": "Prova di Agilità",
           "enabled" : false
         },
         "loyalty": {
           "value": 10,
           "min": 0,
           "max": 99,
-          "label": "Loyalty",
-          "rollLabel": "Loyalty Check",
+          "label": "Lealtà",
+          "rollLabel": "Prova di Lealtà",
           "enabled" : false
         },
         "armor": {
           "value": 10,
           "min": 0,
           "max": 99,
-          "label": "Armor",
-          "rollLabel": "Armor Save",
+          "label": "Armatura",
+          "rollLabel": "Tiro Salvezza su Armatura",
           "enabled" : false
         },
         "sanity": {
           "value": 10,
           "min": 0,
           "max": 99,
-          "label": "Sanity",
-          "rollLabel": "Sanity Save",
+          "label": "Sanità mentale",
+          "rollLabel": "Tiro Salvezza su Sanità mentale",
           "enabled" : false
         }
       }
@@ -216,7 +216,7 @@
         "base"
       ],
       "biography": "",
-      "description": "This is a description",
+      "description": "Questa è una descrizione",
       "type": "",
       "class": "",
       "xp": {
@@ -240,22 +240,22 @@
           "value": 10,
           "min": 0,
           "max": 99,
-          "label": "Armor",
-          "rollLabel": "Armor Save"
+          "label": "Armatura",
+          "rollLabel": "Tiro Salvezza su Armatura"
         },
         "combat": {
           "value": 10,
           "min": 0,
           "max": 99,
-          "label": "Combat",
-          "rollLabel": "Combat Check"
+          "label": "Combattimento",
+          "rollLabel": "Prova di Combattimento"
         },
         "intellect": {
           "value": 10,
           "min": 0,
           "max": 99,
-          "label": "Intellect",
-          "rollLabel": "Intellect Check"
+          "label": "Intelletto",
+          "rollLabel": "Prova di Intelletto"
         },
         "speed": {
           "value": 10,
@@ -268,29 +268,29 @@
           "value": 10,
           "min": 0,
           "max": 99,
-          "label": "Thrusters",
-          "rollLabel": "Thrusters Save"
+          "label": "Propulsori",
+          "rollLabel": "Tiro Salvezza su Propulsori"
         },
         "battle": {
           "value": 10,
           "min": 0,
           "max": 99,
-          "label": "Battle",
-          "rollLabel": "Battle Save"
+          "label": "Battaglia",
+          "rollLabel": "Tiro Salvezza su Battaglia"
         },
         "systems": {
           "value": 10,
           "min": 0,
           "max": 99,
-          "label": "Systems",
-          "rollLabel": "Systems Save"
+          "label": "Sistemi",
+          "rollLabel": "Tiro Salvezza su Sistemi"
         },
         "bankruptcy": {
           "value": 10,
           "min": 0,
           "max": 99,
-          "label": "Bankruptcy",
-          "rollLabel": "Bankruptcy Save"
+          "label": "Bancarotta",
+          "rollLabel": "Tiro Salvezza su Bancarotta"
         }
       },
       "supplies": {
@@ -435,7 +435,7 @@
       "templates": [
         "base"
       ],
-      "text": "An Ability",
+      "text": "Una Abilità",
       "roll": ""
     },
     "crew": {
