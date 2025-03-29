@@ -3,8 +3,8 @@ import { rolltableConfig } from "./windows/settings-rolltables.js";
 export const registerSettings = function () {
   
   game.settings.register('mosh', 'firstEdition', {
-    name: "1e Rules",
-    hint: "Use the 1st edition rules and character sheet.",
+    name: "Regole 1e",
+    hint: "Utilizzare le regole e la scheda del personaggio della prima edizione.",
     default: true,
     scope: 'world',
     type: Boolean,
@@ -76,7 +76,7 @@ export const registerSettings = function () {
           //loop through each result
           if (actor.type === 'character') {
             //log change
-            console.log("First Edition switched to " + value);
+            console.log("Prima edizione passata a " + value);
             //rerender this sheet
             actor.render();
           }
@@ -86,40 +86,40 @@ export const registerSettings = function () {
   });
 
   game.settings.register('mosh', 'macroTarget', {
-    name: "Macro Target",
-    hint: "Who should be the target for macros?",
+    name: "Obiettivo della macro",
+    hint: "Chi dovrebbe essere l'obiettivo delle macro??",
     default: "character",
     scope: 'world',
     type: String,
     choices: {
-      "character": "Currently selected character for the player",
-      "token": "Currently selected token(s) in the scene"
+      "character": "Personaggio attualmente selezionato per il giocatore",
+      "token": "Pedina attualmente selezionata nella scena"
     },
     config: true,
     onChange: value => {
       //log the change
-      console.log("Macro target set to " + value)
+      console.log("Obiettivo macro impostato su " + value)
     }
   });
 
   game.settings.register('mosh', 'critDamage', {
-    name: "Critical Hit Damage",
-    hint: "What should the damage be on a critical hit?",
+    name: "Danni da colpo critico",
+    hint: "Quale dovrebbe essere il danno in caso di colpo critico?",
     default: "advantage",
     scope: 'world',
     type: String,
     choices: {
-      "advantage": "Roll with advantage",
-      "doubleDamage": "Double the damage result",
-      "doubleDice": "Double the damage dice",
-      "maxDamage": "Maximum possible damage result",
-      "weaponValue": "Defer to each weapon's critical damage",
-      "none": "No critical damage"
+      "advantage": "Tira con vantaggio",
+      "doubleDamage": "Raddoppia il danno risultante",
+      "doubleDice": "Raddoppia i dadi dei danni",
+      "maxDamage": "Il massimo danno possibile",
+      "weaponValue": "Fare riferimento al danno critico di ogni arma",
+      "none": "Nessun danno critico"
     },
     config: true,
     onChange: value => {
       //log the change
-      console.log("Critical hits set to " + value)
+      console.log("Colpi critici impostati su " + value)
     }
   });
 
@@ -132,46 +132,46 @@ export const registerSettings = function () {
     config: true,
     onChange: value => {
       //log the change
-      console.log("Damage dice theme set to " + value)
+      console.log("Il tema dei dadi dei danni è impostato su " + value)
     }
   });
 
   game.settings.register('mosh', 'panicDieTheme', {
-    name: "Panic Die Theme",
-    hint: "If DiceSoNice is installed, what theme should be applied to the panic die?",
+    name: "Tema dei dadi di panico",
+    hint: "Se è installato DiceSoNice, quale tema dovrebbe essere applicato ai dadi di panico??",
     default: "panic",
     scope: 'world',
     type: String,
     config: true,
     onChange: value => {
       //log the change
-      console.log("Panic die theme set to " + value)
+      console.log("Tema dei dadi di panico impostato su " + value)
     }
   });
 
   game.settings.register('mosh', 'hideWeight', {
-    name: "Hide 0e Weight",
-    hint: "Hide the 0e weight mechanic in the items list for players and ships?",
+    name: "Nascondi il peso (0e)",
+    hint: "Nascondere la meccanica 0e del peso nell'elenco degli oggetti per giocatori e navi??",
     default: true,
     scope: 'world',
     type: Boolean,
     config: true,
     onChange: value => {
       //log the change
-      console.log("hideWeight set to " + value)
+      console.log("hideWeight impostato su " + value)
     }
   });
   
   game.settings.register('mosh', 'useCalm', {
-    name: "Use Calm?",
-    hint: "Uses the traaa.sh Calm system instead of Stress.",
+    name: "Utilzizare la Calma?",
+    hint: "Utilizza il sistema traaa.sh Calm invece di Stress..",
     default: false,
     scope: 'world',
     type: Boolean,
     config: true,
     onChange: value => {
       //log the change
-      console.log("useCalm set to " + value);
+      console.log("useCalm impostato su " + value);
       //get list of actors
       let actorList = game.actors;
       let actorName = '';
@@ -275,35 +275,35 @@ export const registerSettings = function () {
   });
 
   game.settings.register('mosh', 'androidPanic', {
-    name: "Use Android Panic Tables?",
-    hint: "Adds android-specific tables for Panic and Calm checks.",
+    name: "Utilizzare le tabelle di panico dell'Androide?",
+    hint: "Aggiunge tabelle specifiche per l'Androide per le prove di Panico e Calma.",
     default: false,
     scope: 'world',
     type: Boolean,
     config: true,
     onChange: value => {
       //log the change
-      console.log("androidPanic set to " + value)
+      console.log("androidPanic impostato su " + value)
     }
   });
 
   game.settings.register('mosh', 'autoStress', {
-    name: "Auto Stress Gain on Failures?",
-    hint: "Automatically handles stress gain on a failed roll.",
+    name: "Aumento automatico dello stress in caso di fallimenti?",
+    hint: "Gestisce automaticamente l'aumento di stress in caso di fallimento di un tiro.",
     default: true,
     scope: 'world',
     type: Boolean,
     config: true,
     onChange: value => {
       //log the change
-      console.log("autoStress set to " + value)
+      console.log("autoStress impostato su " + value)
     }
   });
 
   game.settings.registerMenu('mosh', 'rolltableSelector', {
-    name: "Rolltable Configuration",
-    label: "Choose Tables",
-    hint: "Customize which rolltables are used.",
+    name: "Configurazione tabelle cliccabili",
+    label: "Scegli le tabelle",
+    hint: "Personalizza quali tabelle vengano utilizzate.",
     icon: "fa-solid fa-list",
     type: rolltableConfig
   });
