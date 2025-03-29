@@ -1,7 +1,7 @@
 {
   "id": "mosh",
-  "title": "MoSh - Unofficial Mothership",
-  "description": "The unofficial Mothership system for FoundryVTT.",
+  "title": "Mothership",
+  "description": "Sistema per Mothership versione in Italiano.",
   "version": "0.5.26",
   "esmodules": [
     "module/mosh.js"
@@ -12,7 +12,7 @@
   "packs": [
     {
       "name": "conditions_1e",
-      "label": "Conditions (1e)",
+      "label": "Condizioni (1e)",
       "system": "mosh",
       "path": "packs/conditions_1e.db",
       "type": "Item",
@@ -24,7 +24,7 @@
     },
     {
       "name": "items_maintenance_1e",
-      "label": "Maintenance Issues (1e)",
+      "label": "Problemi di Manutenzione (1e)",
       "system": "mosh",
       "path": "packs/items_maintenance_1e.db",
       "type": "Item",
@@ -36,7 +36,7 @@
     },
     {
       "name": "macros_hotbar_1e",
-      "label": "Hotbar Macros (1e)",
+      "label": "Macro nella barra (1e)",
       "system": "mosh",
       "path": "packs/macros_hotbar_1e.db",
       "type": "Macro",
@@ -48,7 +48,7 @@
     },
     {
       "name": "macros_triggered_1e",
-      "label": "Triggered Macros (1e)",
+      "label": "Macro attivate (1e)",
       "system": "mosh",
       "path": "packs/macros_triggered_1e.db",
       "type": "Macro",
@@ -60,7 +60,7 @@
     },
     {
       "name": "rolltables_1e",
-      "label": "Rolltables (1e)",
+      "label": "Tabelle (1e)",
       "system": "mosh",
       "path": "packs/rolltables_1e.db",
       "type": "RollTable",
@@ -72,7 +72,7 @@
     },
     {
       "name": "conditions_0e",
-      "label": "Conditions (0e)",
+      "label": "Condizioni (0e)",
       "system": "mosh",
       "path": "packs/conditions_0e.db",
       "type": "Item",
@@ -84,7 +84,7 @@
     },
     {
       "name": "macros_hotbar_0e",
-      "label": "Hotbar Macros (0e)",
+      "label": "Macro nella barra (0e)",
       "system": "mosh",
       "path": "packs/macros_hotbar_0e.db",
       "type": "Macro",
@@ -134,9 +134,9 @@
   "background": "systems/mosh/images/icons/ui/system/mosh-background.webp",
   "languages": [
     {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json",
+      "lang": "it",
+      "name": "Italiano",
+      "path": "lang/it.json",
       "flags": {}
     }
   ],
@@ -155,6 +155,10 @@
     },
     {
       "name": "hollowphoton",
+      "flags": {}
+    },
+    {
+      "name": "frons79",
       "flags": {}
     }
   ],
